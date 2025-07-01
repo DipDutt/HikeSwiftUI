@@ -13,6 +13,15 @@ struct CardView: View {
             Circle()
                 .fill(
                     LinearGradient(colors: [Color("ColorIndigoMedium"), Color("ColorIndigoMedium 1")], startPoint:.topLeading, endPoint: .bottomTrailing))
+            VStack {
+                Image(.image1)
+                    .resizable()
+                    .scaledToFit()
+               
+            }
+            .padding()
+            
+            
         }
     }
 }
