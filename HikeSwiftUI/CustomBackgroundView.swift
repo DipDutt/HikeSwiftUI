@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct CustomBackgroundView: View {
     var body: some View {
         Text("ContentView")
     }
 }
 
 #Preview {
-    ContentView()
+    CustomBackgroundView()
 }
