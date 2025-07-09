@@ -12,13 +12,13 @@ struct CustomButtonView: View {
         ZStack {
             Circle()
                 .fill(
-                  LinearGradient(
-                    colors: [
-                      .white,
-                        .colorGreenLight,
-                        .colorGreenMedium],
-                    startPoint: .top,
-                    endPoint: .bottom)
+                    LinearGradient(
+                        colors: [
+                            .white,
+                            .colorGreenLight,
+                            .colorGreenMedium],
+                        startPoint: .top,
+                        endPoint: .bottom)
                 )
             
             Circle()
