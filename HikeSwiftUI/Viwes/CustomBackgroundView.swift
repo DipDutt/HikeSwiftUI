@@ -29,14 +29,14 @@ struct CustomBackgroundView: View {
                 .fill(LinearGradient(colors: [Color(.colorGreenLight), Color(.colorGreenMedium)], startPoint: .top, endPoint: .leading))
                 .clipShape(RoundedRectangle(cornerRadius: 40))
                 .padding()
-            
+            // MARK: - HeaderView.
             VStack {
                 Text("Hiking")
                     .fontWeight(.black)
                     .font(.system(size:52))
                     .foregroundStyle(LinearGradient(colors: [.colorGrayLight, .colorGrayMedium], startPoint: .top, endPoint: .bottom))
                 
-            }
+            }// end of vstack
             .frame(maxHeight: .infinity, alignment: .top)
             .padding(.vertical, 30)
             
