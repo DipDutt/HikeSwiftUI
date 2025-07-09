@@ -9,7 +9,22 @@ import SwiftUI
 
 struct CustomBackgroundView: View {
     var body: some View {
-        VStack {
+        ZStack {
+            // MARK: - 3rd layer
+            Color(.colorGreenDark)
+                .clipShape(RoundedRectangle(cornerRadius: 40))
+                .offset(y: 12)
+                .padding()
+            
+            // MARK: - 2nd layer
+            Color(.colorGreenLight)
+                .clipShape(RoundedRectangle(cornerRadius: 40))
+                .offset(y: 3)
+                .opacity(0.85)
+                .padding()
+            
+            
+            // MARK: - 1st Layer
             Rectangle()
                 .fill(LinearGradient(colors: [Color("ColorGreenLight"), Color("ColorGreenMedium")], startPoint: .top, endPoint: .leading))
                 .clipShape(RoundedRectangle(cornerRadius: 40))
