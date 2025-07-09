@@ -30,11 +30,15 @@ struct CustomBackgroundView: View {
                 .clipShape(RoundedRectangle(cornerRadius: 40))
                 .padding()
             // MARK: - HeaderView.
-            VStack {
+            VStack(alignment: .leading) {
                 Text("Hiking")
                     .fontWeight(.black)
                     .font(.system(size:52))
                     .foregroundStyle(LinearGradient(colors: [.colorGrayLight, .colorGrayMedium], startPoint: .top, endPoint: .bottom))
+                Text("Fun and enjoyable outdoor activity for friends and families.")
+                  .multilineTextAlignment(.leading)
+                  .italic()
+                  .foregroundColor(.colorGrayMedium)
                 
             }// end of vstack
             .frame(maxHeight: .infinity, alignment: .top)
