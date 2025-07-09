@@ -14,29 +14,37 @@ struct CardView: View {
             CustomBackgroundView()
             
             // MARK: - HeaderView.
-            VStack(alignment: .leading) {
-                HStack() {
-                    Text("Hiking")
-                        .fontWeight(.black)
-                        .font(.system(size:52))
-                        .foregroundStyle(LinearGradient(colors: [.colorGrayLight, .colorGrayMedium], startPoint: .top, endPoint: .bottom))
+            VStack {
+                VStack(alignment: .leading) {
+                    HStack() {
+                        Text("Hiking")
+                            .fontWeight(.black)
+                            .font(.system(size:52))
+                            .foregroundStyle(LinearGradient(colors: [.colorGrayLight, .colorGrayMedium], startPoint: .top, endPoint: .bottom))
+                        Spacer()
+                        
+                        Button {
+                            //
+                        } label: {
+                            CustomButtonView()
+                        }
+                        
+                    }// end of the hstack
+                    Text("Fun and enjoyable outdoor activity for friends and families.")
+                        .multilineTextAlignment(.leading)
+                        .italic()
+                        .foregroundColor(.colorGrayMedium)
                     
-                    Button {
-                        //
-                    } label: {
-                        CustomButtonView()
-                    }
-                    
-                }// end of the hstack
-                Text("Fun and enjoyable outdoor activity for friends and families.")
-                    .multilineTextAlignment(.leading)
-                    .italic()
-                    .foregroundColor(.colorGrayMedium)
+                }
+                .padding(.horizontal, 40)
+                // end of vstack
                 
-            }// end of vstack
-            .frame(maxHeight: .infinity, alignment: .top)
+                
+            }
+            .frame(maxHeight: .infinity,alignment: .top)
             .padding(.vertical, 30)
-            .padding(.horizontal, 30)
+            
+            
             
             // MARK: - This section for image and circle.
             ZStack {
