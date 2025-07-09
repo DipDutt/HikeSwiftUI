@@ -29,30 +29,7 @@ struct CustomBackgroundView: View {
                 .fill(LinearGradient(colors: [Color(.colorGreenLight), Color(.colorGreenMedium)], startPoint: .top, endPoint: .leading))
                 .clipShape(RoundedRectangle(cornerRadius: 40))
                 .padding()
-            // MARK: - HeaderView.
-            VStack(alignment: .leading) {
-                HStack() {
-                    Text("Hiking")
-                        .fontWeight(.black)
-                        .font(.system(size:52))
-                        .foregroundStyle(LinearGradient(colors: [.colorGrayLight, .colorGrayMedium], startPoint: .top, endPoint: .bottom))
-                    
-                    Button {
-                        //
-                    } label: {
-                        CustomButtonView()
-                    }
-
-                }// end of the hstack
-                Text("Fun and enjoyable outdoor activity for friends and families.")
-                  .multilineTextAlignment(.leading)
-                  .italic()
-                  .foregroundColor(.colorGrayMedium)
-                
-            }// end of vstack
-            .frame(maxHeight: .infinity, alignment: .top)
-            .padding(.vertical, 30)
-            .padding(.horizontal, 30)
+            
             
             
         }
