@@ -22,13 +22,12 @@ struct CardView: View {
                             .font(.system(size:52))
                             .foregroundStyle(LinearGradient(colors: [.colorGrayLight, .colorGrayMedium], startPoint: .top, endPoint: .bottom))
                         Spacer()
-                        
+                        // MARK: - Create ButtonView.
                         Button {
                             //
                         } label: {
                             CustomButtonView()
                         }
-                        
                     }// end of the hstack
                     Text("Fun and enjoyable outdoor activity for friends and families.")
                         .multilineTextAlignment(.leading)
@@ -38,13 +37,9 @@ struct CardView: View {
                 }
                 .padding(.horizontal, 40)
                 // end of vstack
-                
-                
             }
             .frame(maxHeight: .infinity,alignment: .top)
             .padding(.vertical, 30)
-            
-            
             
             // MARK: - This section for image and circle.
             ZStack {
