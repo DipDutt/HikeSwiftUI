@@ -31,10 +31,12 @@ struct CustomBackgroundView: View {
                 .padding()
             // MARK: - HeaderView.
             VStack(alignment: .leading) {
-                Text("Hiking")
-                    .fontWeight(.black)
-                    .font(.system(size:52))
-                    .foregroundStyle(LinearGradient(colors: [.colorGrayLight, .colorGrayMedium], startPoint: .top, endPoint: .bottom))
+                HStack {
+                    Text("Hiking")
+                        .fontWeight(.black)
+                        .font(.system(size:52))
+                        .foregroundStyle(LinearGradient(colors: [.colorGrayLight, .colorGrayMedium], startPoint: .top, endPoint: .bottom))
+                }// end of the hstack
                 Text("Fun and enjoyable outdoor activity for friends and families.")
                   .multilineTextAlignment(.leading)
                   .italic()
