@@ -12,7 +12,7 @@ struct CardView: View {
         ZStack {
             Circle()
                 .fill(
-                    LinearGradient(colors: [Color("ColorIndigoMedium"), Color("ColorIndigoMedium 1")], startPoint:.topLeading, endPoint: .bottomTrailing))
+                    LinearGradient(colors: [Color(.colorIndigoMedium), Color(.colorIndigoMedium1)], startPoint:.topLeading, endPoint: .bottomTrailing))
                 .frame(width: 400, height: 300)
             VStack {
                 Image(.image1)
