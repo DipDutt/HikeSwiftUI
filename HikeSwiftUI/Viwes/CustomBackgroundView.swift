@@ -26,9 +26,11 @@ struct CustomBackgroundView: View {
             
             // MARK: - 1st Layer
             Rectangle()
-                .fill(LinearGradient(colors: [Color("ColorGreenLight"), Color("ColorGreenMedium")], startPoint: .top, endPoint: .leading))
+                .fill(LinearGradient(colors: [Color(.colorGreenLight), Color(.colorGreenMedium)], startPoint: .top, endPoint: .leading))
                 .clipShape(RoundedRectangle(cornerRadius: 40))
                 .padding()
+            
+            
         }
     }
 }
