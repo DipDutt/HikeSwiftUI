@@ -10,17 +10,20 @@ import SwiftUI
 struct CardView: View {
     var body: some View {
         ZStack {
+            // MARK: -  THIS SECTION FOR Circle()
             Circle()
                 .fill(
                     LinearGradient(colors: [Color(.colorIndigoMedium), Color(.colorIndigoMedium1)], startPoint:.topLeading, endPoint: .bottomTrailing))
                 .frame(width: 400, height: 300)
-            VStack {
-                Image(.image1)
-                    .resizable()
-                    .scaledToFit()
-               
-            }
-            .padding()
+                .zIndex(1)
+            // MARK: -  THIS SECTION FOR IMAGE
+            Image(.image1)
+                .resizable()
+                .scaledToFit()
+                .zIndex(2)
+            
+            // MARK: - THIS SECTION For CustomBackgroundView()
+            CustomBackgroundView()
             
             
         }
