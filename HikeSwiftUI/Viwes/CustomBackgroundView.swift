@@ -9,7 +9,12 @@ import SwiftUI
 
 struct CustomBackgroundView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Rectangle()
+                .fill(LinearGradient(colors: [Color("ColorGreenLight"), Color("ColorGreenMedium")], startPoint: .top, endPoint: .leading))
+                .clipShape(RoundedRectangle(cornerRadius: 40))
+                .padding()
+        }
     }
 }
 
