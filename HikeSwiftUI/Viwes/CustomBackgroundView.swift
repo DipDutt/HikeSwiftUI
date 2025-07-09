@@ -43,6 +43,7 @@ struct CustomBackgroundView: View {
             }// end of vstack
             .frame(maxHeight: .infinity, alignment: .top)
             .padding(.vertical, 30)
+            .padding(.horizontal, 30)
             
             
         }
