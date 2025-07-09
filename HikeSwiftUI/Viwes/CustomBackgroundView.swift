@@ -30,6 +30,16 @@ struct CustomBackgroundView: View {
                 .clipShape(RoundedRectangle(cornerRadius: 40))
                 .padding()
             
+            VStack {
+                Text("Hiking")
+                    .fontWeight(.black)
+                    .font(.system(size:52))
+                    .foregroundStyle(LinearGradient(colors: [.colorGrayLight, .colorGrayMedium], startPoint: .top, endPoint: .bottom))
+                
+            }
+            .frame(maxHeight: .infinity, alignment: .top)
+            .padding(.vertical, 30)
+            
             
         }
     }
