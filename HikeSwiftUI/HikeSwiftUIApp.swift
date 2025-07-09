@@ -11,7 +11,7 @@ import SwiftUI
 struct HikeSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            CustomBackgroundView()
+            MainView()
         }
     }
 }
