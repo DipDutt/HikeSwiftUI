@@ -22,26 +22,26 @@ struct CustomButtonView: View {
                 )
             
             Circle()
-              .stroke(
-                LinearGradient(
-                  colors: [
-                    .colorGrayLight,
-                    .colorGrayMedium],
-                  startPoint: .top,
-                  endPoint: .bottom),
-                lineWidth: 4)
+                .stroke(
+                    LinearGradient(
+                        colors: [
+                            .colorGrayLight,
+                            .colorGrayMedium],
+                        startPoint: .top,
+                        endPoint: .bottom),
+                    lineWidth: 4)
             
             Image(systemName: "figure.hiking")
-              .fontWeight(.black)
-              .font(.system(size: 30))
-              .foregroundStyle(
-                LinearGradient(
-                  colors: [
-                    .colorGrayLight,
-                    .colorGrayMedium],
-                  startPoint: .top,
-                  endPoint: .bottom)
-              )
+                .fontWeight(.black)
+                .font(.system(size: 30))
+                .foregroundStyle(
+                    LinearGradient(
+                        colors: [
+                            .colorGrayLight,
+                            .colorGrayMedium],
+                        startPoint: .top,
+                        endPoint: .bottom)
+                )
         }// end of zstck
         .frame(width: 50, height: 50)
     }
