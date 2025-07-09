@@ -1,15 +1,15 @@
 //
-//  ContentView.swift
+//  CustomBackgroundView.swift
 //  HikeSwiftUI
 //
-//  Created by Dip on 20/5/25.
+//  Created by Dip on 9/7/25.
 //
 
 import SwiftUI
 
 struct CustomBackgroundView: View {
     var body: some View {
-        Text("ContentView")
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
