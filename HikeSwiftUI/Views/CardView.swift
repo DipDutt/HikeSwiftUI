@@ -36,10 +36,12 @@ struct CardView: View {
                     
                 }
                 .padding(.horizontal, 40)
-                // end of vstack
+                .frame(maxHeight: .infinity,alignment: .top)
+                .padding(.vertical, 30)
+                // end of inner vstack.
             }
-            .frame(maxHeight: .infinity,alignment: .top)
-            .padding(.vertical, 30)
+            // end of outer vstack.
+            
             
             // MARK: - This section for image and circle.
             ZStack {
@@ -55,8 +57,7 @@ struct CardView: View {
                     .scaledToFit()
             }// 2nd zstack
         }// 1st zstck
-        
-    }
+    }// end of the body
 }
 
 #Preview {
