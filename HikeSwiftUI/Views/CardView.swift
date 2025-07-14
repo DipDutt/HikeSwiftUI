@@ -55,7 +55,19 @@ struct CardView: View {
                 Image(.image1)
                     .resizable()
                     .scaledToFit()
-            }// 2nd zstack
+            }
+            // 2nd zstack
+            
+             // MARK: - FooterView
+            
+            VStack {
+                Button("press the button") {
+                    //
+                }
+                .buttonStyle(.borderedProminent)
+            }
+            .frame(maxHeight: .infinity,alignment: .bottom)
+            .padding(.bottom , 30)
         }// 1st zstck
     }// end of the body
 }
