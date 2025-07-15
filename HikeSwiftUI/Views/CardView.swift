@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CardView: View {
-     // MARK: - Properties
+    // MARK: - Properties
     @State private var imageNumber:Int = 1
     @State private var randomImageNumber: Int = 1
     var body: some View {
@@ -66,7 +66,7 @@ struct CardView: View {
             
             VStack {
                 Button {
-                   randomImage()
+                    randomImage()
                 } label: {
                     Text("Explore More")
                         .font(.title2)
@@ -75,7 +75,7 @@ struct CardView: View {
                         .shadow(color: .black.opacity(0.25), radius: 0.25, x: 1, y: 2)
                 }
                 .buttonStyle(CustomButtonStyle())
-
+                
             }
             .frame(maxHeight: .infinity,alignment: .bottom)
             .padding(.bottom , 30)
@@ -87,7 +87,7 @@ struct CardView: View {
 
 // MARK: - Create Extension of CardView
 extension CardView {
-     // MARK: - Create  random image method to show random a image.
+    // MARK: - Create  random image method to show random a image.
     func randomImage() {
         while randomImageNumber == imageNumber {
             randomImageNumber = Int.random(in: 1...5)
