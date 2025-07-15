@@ -80,14 +80,21 @@ struct CardView: View {
             .frame(maxHeight: .infinity,alignment: .bottom)
             .padding(.bottom , 30)
         }// 1st zstck
+        .frame(width: 320, height: 670)
     }// end of the body
 }
 
 
- // MARK: - Create Extension of CardView
-
+// MARK: - Create Extension of CardView
 extension CardView {
-    
+     // MARK: - Create  random image method to show random a image.
+    func randomImage() {
+        while randomImageNumber == imageNumber {
+            randomImageNumber = Int.random(in: 1...5)
+            print("random number is \(randomImageNumber)")
+        }
+        imageNumber = randomImageNumber
+    }
 }
 
 
