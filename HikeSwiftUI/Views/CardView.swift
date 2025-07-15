@@ -58,7 +58,9 @@ struct CardView: View {
                 Image("image-\(imageNumber)")
                     .resizable()
                     .scaledToFit()
+                    .offset(x: 5)
                     .frame(width: 350, height: 400)
+                    .animation(.easeInOut, value: imageNumber)
             }
             // 2nd zstack
             
