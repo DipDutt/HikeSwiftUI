@@ -52,7 +52,7 @@ struct CardView: View {
                     .frame(width: 400, height: 300)
                 
                 // MARK: -  This section for image.
-                Image(.image1)
+                Image("image-1")
                     .resizable()
                     .scaledToFit()
             }
@@ -62,7 +62,7 @@ struct CardView: View {
             
             VStack {
                 Button {
-                    print("press")
+                   
                 } label: {
                     Text("Explore More")
                         .font(.title2)
@@ -78,6 +78,14 @@ struct CardView: View {
         }// 1st zstck
     }// end of the body
 }
+
+
+ // MARK: - Create Extension of CardView
+
+extension CardView {
+    
+}
+
 
 #Preview {
     CardView()
