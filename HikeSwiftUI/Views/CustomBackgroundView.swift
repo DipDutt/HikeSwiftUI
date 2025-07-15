@@ -22,8 +22,7 @@ struct CustomBackgroundView: View {
                 .offset(y: 3)
                 .opacity(0.85)
                 .padding()
-            
-            
+        
             // MARK: - 1st Layer
             Rectangle()
                 .fill(LinearGradient(colors: [Color(.colorGreenLight), Color(.colorGreenMedium)], startPoint: .top, endPoint: .leading))

@@ -58,13 +58,20 @@ struct CardView: View {
             }
             // 2nd zstack
             
-             // MARK: - FooterView
+            // MARK: - FooterView
             
             VStack {
-                Button("press the button") {
-                    //
+                Button {
+                    print("press")
+                } label: {
+                    Text("Explore More")
+                        .font(.title2)
+                        .fontWeight(.heavy)
+                        .foregroundStyle(LinearGradient(colors: [.colorGreenLight,.colorGreenMedium], startPoint: .top, endPoint: .bottom))
+                        .shadow(color: .black.opacity(0.25), radius: 0.25, x: 1, y: 2)
                 }
-                .buttonStyle(.borderedProminent)
+                .buttonStyle(CustomButtonStyle())
+
             }
             .frame(maxHeight: .infinity,alignment: .bottom)
             .padding(.bottom , 30)

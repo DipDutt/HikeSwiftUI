@@ -10,7 +10,7 @@ import SwiftUI
 struct CustomButtonView: View {
     var body: some View {
         ZStack {
-             // MARK: - inner circle.
+            // MARK: - inner circle.
             Circle()
                 .fill(
                     LinearGradient(
@@ -31,7 +31,7 @@ struct CustomButtonView: View {
                         startPoint: .top,
                         endPoint: .bottom),
                     lineWidth: 4)
-             // MARK: - system image.
+            // MARK: - system image.
             Image(systemName: "figure.hiking")
                 .fontWeight(.black)
                 .font(.system(size: 30))
