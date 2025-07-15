@@ -66,7 +66,7 @@ struct CardView: View {
             
             VStack {
                 Button {
-                   
+                   randomImage()
                 } label: {
                     Text("Explore More")
                         .font(.title2)
