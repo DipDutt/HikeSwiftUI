@@ -55,9 +55,10 @@ struct CardView: View {
                     .frame(width: 400, height: 300)
                 
                 // MARK: -  This section for image.
-                Image("image-1")
+                Image("image-\(imageNumber)")
                     .resizable()
                     .scaledToFit()
+                    .frame(width: 350, height: 400)
             }
             // 2nd zstack
             
