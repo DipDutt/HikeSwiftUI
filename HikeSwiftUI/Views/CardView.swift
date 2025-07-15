@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct CardView: View {
+     // MARK: - Properties
+    @State private var imageNumber:Int = 1
+    @State private var randomImageNumber: Int = 1
     var body: some View {
         // MARK: - THIS SECTION For CustomBackgroundView() and HeaderView.
         ZStack {
