@@ -84,7 +84,7 @@ struct CardView: View {
             .frame(maxHeight: .infinity,alignment: .bottom)
             .padding(.bottom , 30)
         }// 1st zstck
-        .frame(width: 350, height: 650)
+        //.frame(width: 350, height: 650)
     }// end of the body
 }
 
