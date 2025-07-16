@@ -11,6 +11,7 @@ struct CustomCircleView: View {
     @State private var isAnimateGradient: Bool = false
     var body: some View {
         ZStack {
+            // MARK: - Lower View.
             Circle()
                 .fill(
                     LinearGradient(
@@ -22,13 +23,15 @@ struct CustomCircleView: View {
                         endPoint: isAnimateGradient ? .bottomTrailing : .topTrailing
                     )
                 )
+            
+             // MARK: - Upper View.
                 .onAppear {
                     withAnimation(Animation.linear(duration: 3).repeatForever(autoreverses: true)) {
                         self.isAnimateGradient.toggle()
                     }
-
+                    
                 }
-                
+            
         }
         .frame(width: 300, height: 300)
     }

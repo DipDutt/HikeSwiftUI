@@ -49,10 +49,7 @@ struct CardView: View {
             // MARK: - This section for image and circle.
             ZStack {
                 // MARK: -  THIS section for  Circle().
-                Circle()
-                    .fill(
-                        LinearGradient(colors: [Color(.colorIndigoMedium), Color(.colorIndigoMedium1)], startPoint:.topLeading, endPoint: .bottomTrailing))
-                    .frame(width: 400, height: 300)
+                CustomCircleView()
                 
                 // MARK: -  This section for image.
                 Image("image-\(imageNumber)")
