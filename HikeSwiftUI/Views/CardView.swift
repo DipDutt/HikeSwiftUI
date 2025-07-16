@@ -43,8 +43,8 @@ struct CardView: View {
                         .foregroundColor(.colorGrayMedium)
                     
                 }
-                .padding(.horizontal, 40)
                 .frame(maxHeight: .infinity,alignment: .top)
+                .padding(.horizontal, 40)
                 .padding(.vertical, 30)
                 // end of inner vstack.
             }
@@ -84,7 +84,7 @@ struct CardView: View {
             .frame(maxHeight: .infinity,alignment: .bottom)
             .padding(.bottom , 30)
         }// 1st zstck
-        //.frame(width: 350, height: 650)
+        .frame(width: 380, height: 670)
     }// end of the body
 }
 
