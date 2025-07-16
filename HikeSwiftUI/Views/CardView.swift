@@ -11,6 +11,7 @@ struct CardView: View {
     // MARK: - Properties
     @State private var imageNumber:Int = 1
     @State private var randomImageNumber: Int = 1
+    @State private var isPresented: Bool = false
     var body: some View {
         // MARK: - THIS SECTION For CustomBackgroundView() and HeaderView.
         ZStack {
@@ -27,9 +28,12 @@ struct CardView: View {
                         Spacer()
                         // MARK: - Create ButtonView.
                         Button {
-                            //
+                            isPresented.toggle()
                         } label: {
                             CustomButtonView()
+                        }
+                        .sheet(isPresented: $isPresented) {
+                            SettingsView()
                         }
                     }// end of the hstack
                     Text("Fun and enjoyable outdoor activity for friends and families.")
