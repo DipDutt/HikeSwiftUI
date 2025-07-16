@@ -47,8 +47,18 @@ struct SettingsView: View {
                 .padding(.bottom, 16)
             }
             .listRowSeparator(.hidden)
-        }// list end here
-       
+            
+            // MARK: - Section For About APP .
+            
+            Section {
+                Text("Label")
+            } header: {
+                Text("ABOUT THE APP")
+            } footer: {
+                Text("Copyright © All right reserved.")
+                
+            }
+        }
     }
 }
 
