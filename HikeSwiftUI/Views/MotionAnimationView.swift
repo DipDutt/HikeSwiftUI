@@ -11,10 +11,21 @@ struct MotionAnimationView: View {
      // MARK: - Properties
     @State private var randomCircle: Int = Int.random(in: 6...12)
     @State private var isAnimating: Bool = false
+    @State private var isAnimateGradient: Bool = false
     var body: some View {
         ZStack {
             Circle()
-                .fill(Color.blue)
+                .fill()
+                .fill(
+                    LinearGradient(
+                        colors: [
+                            .colorIndigoMedium,
+                            .colorIndigoMedium1
+                        ],
+                        startPoint: isAnimateGradient ? .topLeading : .bottomLeading,
+                        endPoint: isAnimateGradient ? .bottomTrailing : .topTrailing
+                    )
+                )
           ForEach(0...randomCircle, id: \.self) { item in
             Circle()
               .foregroundColor(.white)
@@ -34,10 +45,15 @@ struct MotionAnimationView: View {
                 ) {
                     isAnimating.toggle()
                 }
+                  withAnimation(Animation.linear(duration: 3).repeatForever(autoreverses: true)) {
+                      self.isAnimateGradient.toggle()
+                  }
+                  
               })
           }
         }
         .frame(width: 300, height: 300)
+        .mask(Circle())
         .drawingGroup()
     }
 }
@@ -75,4 +91,5 @@ extension MotionAnimationView {
 
 #Preview {
     MotionAnimationView()
+   
 }
