@@ -48,5 +48,12 @@ struct CustomRowListView: View {
 }
 
 #Preview {
-    CustomRowListView()
+    CustomRowListView(
+      rowLabel: "Website",
+      rowIcon: "globe",
+      rowContent: nil,
+      rowTintColor: .pink,
+      rowLinkLabel: "Credo Academy",
+      rowLinkDestination: "https://credo.academy"
+    )
 }
