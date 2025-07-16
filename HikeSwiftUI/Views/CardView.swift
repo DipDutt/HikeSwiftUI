@@ -54,7 +54,7 @@ struct CardView: View {
             // MARK: - This section for image and circle.
             ZStack {
                 // MARK: -  THIS section for  Circle().
-                CustomCircleView()
+                MotionAnimationView()
                 
                 // MARK: -  This section for image.
                 Image("image-\(imageNumber)")
