@@ -34,6 +34,7 @@ struct CardView: View {
                         }
                         .sheet(isPresented: $isPresented) {
                             SettingsView()
+                                .presentationDetents([.medium, .large])
                         }
                     }// end of the hstack
                     Text("Fun and enjoyable outdoor activity for friends and families.")
