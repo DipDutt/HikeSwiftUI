@@ -14,6 +14,7 @@ struct MotionAnimationView: View {
     @State private var isAnimateGradient: Bool = false
     var body: some View {
         ZStack {
+            
             Circle()
                 .fill()
                 .fill(
@@ -36,9 +37,9 @@ struct MotionAnimationView: View {
                 y: randomCoordinate()
               )
               .scaleEffect(isAnimating ? randomScale() : 1)
-              .onAppear(perform: {
+              .onAppear {
                 withAnimation(
-                  .interpolatingSpring(stiffness: 0.25, damping: 0.25)
+                  .interpolatingSpring(stiffness: 0.25, damping: 1)
                   .repeatForever()
                   .speed(randomSpeed())
                   .delay(randomDelay())
@@ -49,7 +50,7 @@ struct MotionAnimationView: View {
                       self.isAnimateGradient.toggle()
                   }
                   
-              })
+              }
           }
         }
         .frame(width: 300, height: 300)
