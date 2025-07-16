@@ -10,7 +10,7 @@ import SwiftUI
 struct SettingsView: View {
     var body: some View {
         List {
-             // MARK: -  Create Section Header.
+            // MARK: -  Create Section Header.
             Section {
                 HStack {
                     Spacer()
