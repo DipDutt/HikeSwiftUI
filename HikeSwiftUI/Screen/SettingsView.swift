@@ -92,33 +92,29 @@ struct SettingsView: View {
             }
             .listRowSeparator(.hidden)
             
+            // MARK: - Section For About APP .
             
-            header: do {
-                Text("Alternate Icons💡")
+            Section {
+                CustomRowListView(rowLabel: "Application", rowIcon: "apps.iphone", rowContent: "HIKE", rowTintColor: .blue)
                 
-                // MARK: - Section For About APP .
+                CustomRowListView(rowLabel: "Compatibility", rowIcon: "info.circle", rowContent: "iOS, iPadOS", rowTintColor: .red)
                 
-                Section {
-                    CustomRowListView(rowLabel: "Application", rowIcon: "apps.iphone", rowContent: "HIKE", rowTintColor: .blue)
-                    
-                    CustomRowListView(rowLabel: "Compatibility", rowIcon: "info.circle", rowContent: "iOS, iPadOS", rowTintColor: .red)
-                    
-                    CustomRowListView(rowLabel: "Technology", rowIcon: "swift", rowContent: "Swift", rowTintColor: .orange)
-                    
-                    CustomRowListView(rowLabel: "Version", rowIcon: "gear", rowContent: "1.0", rowTintColor: .purple)
-                    
-                    CustomRowListView(rowLabel: "Developer", rowIcon: "ellipsis.curlybraces", rowContent: "John Doe", rowTintColor: .mint)
-                    
-                    CustomRowListView(rowLabel: "Designer", rowIcon: "paintpalette", rowContent: "Robert Petras", rowTintColor: .pink)
-                    
-                    CustomRowListView(rowLabel: "Website", rowIcon: "globe", rowTintColor: .indigo, rowLinkLabel: "Credo Acedemy", rowLinkDestination: "https://credo.academy")
-                } header: {
-                    Text("ABOUT THE APP")
-                } footer: {
-                    Text("Copyright © All right reserved.")
-                    
-                }
+                CustomRowListView(rowLabel: "Technology", rowIcon: "swift", rowContent: "Swift", rowTintColor: .orange)
+                
+                CustomRowListView(rowLabel: "Version", rowIcon: "gear", rowContent: "1.0", rowTintColor: .purple)
+                
+                CustomRowListView(rowLabel: "Developer", rowIcon: "ellipsis.curlybraces", rowContent: "John Doe", rowTintColor: .mint)
+                
+                CustomRowListView(rowLabel: "Designer", rowIcon: "paintpalette", rowContent: "Robert Petras", rowTintColor: .pink)
+                
+                CustomRowListView(rowLabel: "Website", rowIcon: "globe", rowTintColor: .indigo, rowLinkLabel: "Credo Acedemy", rowLinkDestination: "https://credo.academy")
+            } header: {
+                Text("ABOUT THE APP")
+            } footer: {
+                Text("Copyright © All right reserved.")
+                
             }
+            
         }
     }
 }
