@@ -12,6 +12,7 @@ struct MotionAnimationView: View {
     @State private var randomCircle: Int = Int.random(in: 6...12)
     @State private var isAnimating: Bool = false
     @State private var isAnimateGradient: Bool = false
+     // MARK: - Main Body
     var body: some View {
         ZStack {
             
