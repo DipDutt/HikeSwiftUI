@@ -15,6 +15,7 @@ public struct CustomButtonStyle: ButtonStyle {
             .label
             .padding(.vertical)
             .padding(.horizontal, 30)
+            .background(.ultraThinMaterial)
             .background(
                 configuration.isPressed ? LinearGradient(colors: [.colorGrayMedium, .colorGrayLight], startPoint: .top, endPoint: .bottom) : LinearGradient(colors: [.colorGrayLight,.colorGrayMedium], startPoint: .top, endPoint: .bottom)
                 
